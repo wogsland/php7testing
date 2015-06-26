@@ -25,10 +25,8 @@ header('Content-Disposition: attachment; filename="file.pdf"');
 echo $snappy->getOutput(array('http://www.github.com','http://www.knplabs.com','http://www.php.net'));
 
 // .. or simply save the PDF to a file
-/*
 $snappy = new Pdf(__DIR__.'/vendor/h4cc/wkhtmltopdf-amd64/bin/wkhtmltopdf-amd64');
 $snappy->generateFromHtml('<h1>Bill</h1><p>You owe me money, dude.</p>', '/tmp/bill-123.pdf');
-*/
 
 // Pass options to snappy
 // Type wkhtmltopdf -H to see the list of options
