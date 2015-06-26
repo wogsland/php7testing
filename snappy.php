@@ -19,12 +19,10 @@ echo $snappy->getOutput('http://www.github.com');
 
 // Merge multiple urls into one pdf
 // by sending an array of urls to getOutput()
-/*
 $snappy = new Pdf(__DIR__.'/vendor/h4cc/wkhtmltopdf-amd64/bin/wkhtmltopdf-amd64');
 header('Content-Type: application/pdf');
 header('Content-Disposition: attachment; filename="file.pdf"');
 echo $snappy->getOutput(array('http://www.github.com','http://www.knplabs.com','http://www.php.net'));
-*/
 
 // .. or simply save the PDF to a file
 /*
